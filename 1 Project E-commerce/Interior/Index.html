@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">INTERIOR DESIGN PRODUCT LIST</div>
+        <div class="listProduct"></div>
+    </div>
+    <script>
+        //obtaining data from products.json file
+        let products = null;
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                console.log(products);
+                addDataToHTML();
+            })
+        //adding product data to HTML
+        let listProduct = document.querySelector('.listProduct');
+        function addDataToHTML() {
+            products.forEach(product => {
+                //creating a new item element
+                let newProduct = create.Element('a');
+                newProduct.href = '/detail.html?id=' + product.id;
+                newProduct.classlist.add('item');
+                newProduct.innerHTML = `
+                <img src= "${product.image}">
+                <h2>$ ${product.name}</h2> 
+                `;
+
+                // stopped at 5:18
+                //adding the element to listProduct class
+                listProduct.appendChild(newProduct);
+            })
+        }
+    </script>
+</body>
+
+</html>
