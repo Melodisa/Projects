@@ -7,43 +7,43 @@
     },
     {
         "id": 2,
-        "name": "GOLDEN ARMCHAIR",
+        "name": "GOLD FRAME MIRROR",
         "price": 750,
         "image": "2.jpg"
     },
     {
         "id": 3,
-        "name": "OLIVE COUCH",
+        "name": "CREAM TABLE LAMP",
         "price": 600,
         "image": "3.jpg"
     },
     {
         "id": 4,
-        "name": "TOOTHBRUSH STAND",
+        "name": "LOUNGE CHAIR",
         "price": 200,
         "image": "4.jpg"
     },
     {
         "id": 5,
-        "name": "CREAM COUCH",
+        "name": "CREAM CHAIR",
         "price": 500,
         "image": "5.jpg"
     },
     {
         "id": 6,
-        "name": "LEAF COUCH",
+        "name": "LOUNGE CHAIR SET",
         "price": 750,
         "image": "6.jpg"
     },
     {
         "id": 7,
-        "name": "LIP COUCH",
+        "name": "CREAM VASE",
         "price": 800,
         "image": "7.jpg"
     },
     {
         "id": 8,
-        "name": "SILVER MIRROR",
+        "name": "SILVER FRAME MIRROR",
         "price": 300,
         "image": "8.jpg"
     }

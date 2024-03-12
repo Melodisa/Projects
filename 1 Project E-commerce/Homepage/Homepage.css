@@ -68,6 +68,8 @@ body {
 }
 
 .search-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     display: flex;
     flex-direction: column;
     gap: .25rem;

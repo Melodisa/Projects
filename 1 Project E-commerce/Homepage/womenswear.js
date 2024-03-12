@@ -52,3 +52,8 @@ function clearCart() {
     // Reseting the total price
     totalPriceElement.innerText = '0.00';
 }
+
+// Function to go back in the browser history using an arrow
+function goBack() {
+    window.history.back();
+}
