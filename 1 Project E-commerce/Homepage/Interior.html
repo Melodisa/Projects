@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womenswear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Mfavicon.ico">
+</head>
+
+<body>
+    <script src="scripts.js"></script>
+
+    <div class="container">
+        <div class="title">WOMENSWEAR PRODUCT LIST</div>
+        <div class="listProduct"></div>
+    </div>
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: £<span id="total-price">0.00</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script>
+        let products = null;
+
+        // Obtaining data from product.json file
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+            });
+
+        function addDataToHTML() {
+            let listProductHTML = document.querySelector('.listProduct');
+            // adding new data
+            if (products != null) {
+                products.forEach(product => {
+                    let newProduct = document.createElement('div');
+                    newProduct.classList.add('item');
+                    newProduct.innerHTML =
+                        `<img src="${product.image}" alt="">
+                        <h2>${product.name}</h2>
+                        <div class="price">£${product.price}</div>
+                        <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
+                    listProductHTML.appendChild(newProduct);
+                });
+            }
+        }
+
+        function addToCart(id, name, price) {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+
+            // Create a new cart item
+            const cartItem = document.createElement('li');
+            cartItem.innerHTML = `${name} - £${price}`;
+            cartItems.appendChild(cartItem);
+
+            // Update the total price
+            let totalPrice = parseFloat(totalPriceElement.innerText);
+            totalPrice += price;
+            totalPriceElement.innerText = totalPrice.toFixed(2);
+        }
+
+        function clearCart() {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+
+            // Clear cart items
+            cartItems.innerHTML = '';
+
+            // Reset total price
+            totalPriceElement.innerText = '0.00';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        });
+    </script>
+</body>
+
+</html>

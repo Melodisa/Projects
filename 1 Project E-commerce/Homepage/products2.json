@@ -1,58 +1,58 @@
 [
     {
-        "id": 1,
-        "name": "CREAM TEA TABLE",
-        "price": 550,
-        "image": "1.jpg",
+        "id": 10,
+        "name": "CREAM SUIT",
+        "price": 600,
+        "image": "10.jpg",
         "description": "This table has been rendered by the architect designer Paula Von Berg, it is a brilliant side table or tea table"
     },
     {
-        "id": 2,
-        "name": "GOLDEN ARMCHAIR",
-        "price": 750,
-        "image": "2.jpg",
+        "id": 11,
+        "name": "BLACK & WHITE DRESS",
+        "price": 700,
+        "image": "11.jpg",
         "description": "This armchair has been rendered by the interior designer Stella Justina, it is a very comfortable chair to sit in"
     },
     {
-        "id": 3,
-        "name": "OLIVE COUCH",
-        "price": 600,
-        "image": "3.jpg",
+        "id": 12,
+        "name": "WHITE LINEN SHIRT",
+        "price": 250,
+        "image": "12.jpg",
         "description": "This couch has been rendered by the interior designer Stella Justina, it is a very comfortable chair to sit in"
     },
     {
-        "id": 4,
-        "name": "TOOTHBRUSH STAND",
-        "price": 200,
-        "image": "4.jpg",
+        "id": 13,
+        "name": "CREAM JUMPER",
+        "price": 100,
+        "image": "13.jpg",
         "description": "Designed by Aneta Willstrom, this toothbrush stand has nordic influence with its minimalism"
     },
     {
-        "id": 5,
-        "name": "CREAM COUCH",
-        "price": 500,
-        "image": "5.jpg",
+        "id": 14,
+        "name": "IVORY JUMPSUIT",
+        "price": 300,
+        "image": "14.jpg",
         "description": "This couch was made to be comfortable and minimal, designed by Sonia Wallberg"
     },
     {
-        "id": 6,
-        "name": "LEAF COUCH",
-        "price": 750,
-        "image": "6.jpg",
+        "id": 15,
+        "name": "BLACK SHIRT",
+        "price": 150,
+        "image": "15.jpg",
         "description": "This couch was clearly inspired by nature, rendered by Taliyah Oxe"
     },
     {
-        "id": 7,
-        "name": "LIP COUCH",
-        "price": 800,
-        "image": "7.jpg",
+        "id": 16,
+        "name": "WHITE VEST",
+        "price": 100,
+        "image": "16.jpg",
         "description": "Designed by Jane Kapur, this lip couch is made for a Y2K aesthetic"
     },
     {
-        "id": 8,
-        "name": "SILVER MIRROR",
-        "price": 300,
-        "image": "8.jpg",
+        "id": 17,
+        "name": "CREAM SKIRT",
+        "price": 200,
+        "image": "17.jpg",
         "description": "Silver is the favourite colour of designer Yolanda Ekblom"
     }
 ]
