@@ -3,56 +3,48 @@
         "id": 1,
         "name": "CREAM TEA TABLE",
         "price": 550,
-        "image": "1.jpg",
-        "description": "This table has been rendered by the architect designer Paula Von Berg, it is a brilliant side table or tea table"
+        "image": "1.jpg"
     },
     {
         "id": 2,
         "name": "GOLDEN ARMCHAIR",
         "price": 750,
-        "image": "2.jpg",
-        "description": "This armchair has been rendered by the interior designer Stella Justina, it is a very comfortable chair to sit in"
+        "image": "2.jpg"
     },
     {
         "id": 3,
         "name": "OLIVE COUCH",
         "price": 600,
-        "image": "3.jpg",
-        "description": "This couch has been rendered by the interior designer Stella Justina, it is a very comfortable chair to sit in"
+        "image": "3.jpg"
     },
     {
         "id": 4,
         "name": "TOOTHBRUSH STAND",
         "price": 200,
-        "image": "4.jpg",
-        "description": "Designed by Aneta Willstrom, this toothbrush stand has nordic influence with its minimalism"
+        "image": "4.jpg"
     },
     {
         "id": 5,
         "name": "CREAM COUCH",
         "price": 500,
-        "image": "5.jpg",
-        "description": "This couch was made to be comfortable and minimal, designed by Sonia Wallberg"
+        "image": "5.jpg"
     },
     {
         "id": 6,
         "name": "LEAF COUCH",
         "price": 750,
-        "image": "6.jpg",
-        "description": "This couch was clearly inspired by nature, rendered by Taliyah Oxe"
+        "image": "6.jpg"
     },
     {
         "id": 7,
         "name": "LIP COUCH",
         "price": 800,
-        "image": "7.jpg",
-        "description": "Designed by Jane Kapur, this lip couch is made for a Y2K aesthetic"
+        "image": "7.jpg"
     },
     {
         "id": 8,
         "name": "SILVER MIRROR",
         "price": 300,
-        "image": "8.jpg",
-        "description": "Silver is the favourite colour of designer Yolanda Ekblom"
+        "image": "8.jpg"
     }
 ]
