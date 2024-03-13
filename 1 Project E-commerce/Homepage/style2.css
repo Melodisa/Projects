@@ -50,18 +50,21 @@ a {
 .listProduct .item h2 {
     font-weight: 500;
     font-size: large;
+    margin-right: calc(13px + 2%);
 }
 
 .listProduct .item .price {
-    letter-spacing: 7px;
+    letter-spacing: 6px;
     font-size: 10;
+    align-items: center;
+
 }
 
 .item button {
     background-color: #293241;
     color: white;
     align-items: center;
-    margin: 15px 30px;
+    margin: 20px 30px 20px 20px;
     padding: 10px 5px;
     border: none;
     border-radius: 20px;
@@ -97,8 +100,8 @@ a {
 .detail .buttons button:nth-child(2) {
     background-color: #ddb892;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: #eee;
     box-shadow: 0 10px 20px #2F2F2F77;
 }
@@ -133,7 +136,7 @@ a {
 }
 
 #cart button:hover {
-    background-color: #f26a8d;
+    background-color: #f28482;
 
 }
 
@@ -150,7 +153,7 @@ a {
 }
 
 #cart-items li {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 #total-price {
