@@ -1,40 +1,48 @@
-let products = [];
+let products = null;
+// this is for the sidebar
+function sidebarOpen() {
 
-fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        displayResults(products);
-    });
-
-function performSearch() {
-    // Get the input value
-    var searchTerm = document.getElementById('search').value.toLowerCase();
-    displayResults(filterProducts(searchTerm));
-}
-
-function filterProducts(searchTerm) {
-    // Filter products based on the search term
-    return products.filter(product => product.name.toLowerCase().includes(searchTerm));
-}
-
-function displayResults(results) {
-    var listProductHTML = document.querySelector('.listProduct');
-    listProductHTML.innerHTML = '';
-
-    if (results.length === 0) {
-        listProductHTML.innerHTML = '<p>No results found.</p>';
-    } else {
-        results.forEach(product => {
-            let newProduct = document.createElement('div');
-            newProduct.classList.add('item');
-            newProduct.innerHTML =
-                `<img src="${product.image}" alt="">
-                <h2>${product.name}</h2>
-                <div class="price">£${product.price}</div>
-                <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
-            listProductHTML.appendChild(newProduct);
+    document.getElementsByClassName('navbar__sidebar')[0].classList.toggle('show');
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            addDataToHTML();
         });
+}
+function addDataToHTML() {
+    let listProductHTML = document.querySelector('.navbar__sidebar');
+    let search = document.getElementById("searchbar").value;
+    search = search.toLowerCase();
+    if (search == "") {
+        alert("Please enter a valid product name");
     }
+    else {
+        if (products != null) {
+            products.forEach(product => {
+                if (product.name.toLowerCase() === search) {
+                    // let newProduct = document.createElement('div');
+                    // newProduct.classList.add('item');
+                    listProductHTML.innerHTML = `<h2>${product.name}</h2>
+                    <div class="price">£${product.price}</div>`;
+                    // listProductHTML.appendChild(newProduct);
+                }
+            });
+
+        }
+        else {
+            alert("Please enter a valid product name");
+        }
+    }
+    // // adding new data
+    // if (products != null) {
+    //     products.forEach(product => {
+    //         let newProduct = document.createElement('div');
+    //         newProduct.classList.add('item');
+    //         newProduct.innerHTML =
+    //             `<h2>${product.name}</h2>
+    //             <div class="price">£${product.price}</div>`;
+    //     });
+    // }
 }
 

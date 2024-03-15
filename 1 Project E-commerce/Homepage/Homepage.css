@@ -1,13 +1,36 @@
 .container {
     display: flex;
     flex-direction: row;
+    position: relative;
     width: 100%;
     background-image: url("2wmnopposite.jpg"), url("2brosindesert.jpg"), url("2brosindesert2.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     height: 100vh;
     background-size: 400px, 400px, 350px;
     background-position: left, center, right;
+}
 
+/* this is the sidebar that will pop up */
+.navbar__container {
+    text-align: right;
+}
+
+.navbar__sidebar {
+    position: fixed;
+    top: 300px;
+    bottom: 0;
+    right: -305px;
+    width: 300px;
+    background-color: white;
+    z-index: 99;
+    transition: right 1s;
+    height: 300px;
+    border-right: 1px solid;
+    border-radius: 10%;
+}
+
+.navbar__sidebar.show {
+    right: 0px
 }
 
 nav {
@@ -25,11 +48,7 @@ nav {
     padding: 20px 10px;
     top: 0;
     z-index: 1;
-
-
 }
-
-
 
 nav ul li {
 
@@ -67,7 +86,7 @@ body {
 
 }
 
-.search-wrapper {
+.s {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     display: flex;

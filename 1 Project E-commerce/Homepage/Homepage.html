@@ -20,14 +20,23 @@
             <li><a href="Interior.html">Interior</a></li>
             <li><a href="womenswear.html">Womenswear</a></li>
         </ul>
+        <button onclick="sidebarOpen()">Search</button>
+        <input id="searchbar" type="text" name="search">
 
-        <div class="search-wrapper">
-            <label for="search">Search</label>
-            <input type="search" id="search">
-        </div>
+        <ul id="list-holder">
+
+        </ul>
 
     </nav>
 
+    <!--  this is for the search bar sidebar to pop up  -->
+    <div class="navbar__main-container">
+        <div class="navbar__container"></div>
+        <div class="navbar__sidebar-wrapper">
+            <div class="navbar__sidebar">Search Results</div>
+        </div>
+    </div>
+    <!-- end of the search bar sidebar code -->
     <div class="container">
 
     </div>
