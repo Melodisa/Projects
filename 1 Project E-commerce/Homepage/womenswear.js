@@ -21,7 +21,7 @@ function addDataToHTML() {
                 `<img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">£${product.price}</div>
-                <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
+                <button class="addToCartBtn" onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
             listProductHTML.appendChild(newProduct);
         });
     }

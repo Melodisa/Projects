@@ -29,7 +29,7 @@ a {
 
 .listProduct .item {
     box-sizing: border-box;
-    background-color: #ddb892;
+    background-color: #a98467;
     padding: 20px 5px 10px 20px;
     border-radius: 20px;
     display: grid;
@@ -42,7 +42,7 @@ a {
 .listProduct .item img {
     width: 90%;
     height: 200px;
-    filter: drop-shadow(0 25px 20px #0009);
+    filter: drop-shadow(0 10px 7px #0009);
     border-radius: 10%;
 
 }
@@ -72,6 +72,11 @@ a {
     font-size: 17px;
 }
 
+.addToCartBtn:hover {
+    background-color: #38b000;
+}
+
+
 .detail .buttons button {
     background-color: #eee;
     border: none;
@@ -87,7 +92,7 @@ a {
 }
 
 .detail .buttons span {
-    background-color: #ddb892;
+    background-color: #a98467;
     width: 30px;
     height: 30px;
     display: flex;
@@ -98,7 +103,7 @@ a {
 }
 
 .detail .buttons button:nth-child(2) {
-    background-color: #ddb892;
+    background-color: #a98467;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +124,7 @@ a {
     right: 0;
     width: 200px;
     background-color: #f8f8f8;
-    border: 30px solid #ddb892;
+    border: 30px solid #a98467;
     padding: 10px;
     border-radius: 50px;
     text-transform: lowercase;
@@ -136,7 +141,7 @@ a {
 }
 
 #cart button:hover {
-    background-color: #f28482;
+    background-color: #fb5607;
 
 }
 

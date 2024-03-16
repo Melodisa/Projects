@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () { });
 
 let products = null;
 
-// Obtaining data from product.json file
+// Obtaining data from product.json file //
 fetch('products.json')
     .then(response => response.json())
     .then(data => {
@@ -12,7 +12,7 @@ fetch('products.json')
 
 function addDataToHTML() {
     let listProductHTML = document.querySelector('.listProduct');
-    // adding new data
+    // adding new data //
     if (products != null) {
         products.forEach(product => {
             let newProduct = document.createElement('div');
@@ -21,7 +21,7 @@ function addDataToHTML() {
                 `<img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">£${product.price}</div>
-                <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
+                <button class="addToCartBtn" onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>`;
             listProductHTML.appendChild(newProduct);
         });
     }
@@ -31,7 +31,7 @@ function addToCart(id, name, price) {
     const cartItems = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
 
-    // Creating a new cart item
+    // Creating a new cart item //
     const cartItem = document.createElement('li');
     cartItem.innerHTML = `${name} - £${price}`;
     cartItems.appendChild(cartItem);
